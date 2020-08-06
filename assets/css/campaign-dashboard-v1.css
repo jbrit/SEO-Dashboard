@@ -1,0 +1,245 @@
+:root {
+  --main-color: #0c318f;
+}
+
+/* Utility Classes */
+.bg-main {
+  background-color: var(--main-color);
+}
+
+.f-main {
+  color: var(--main-color);
+}
+
+.f-14 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.f-16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.f-20 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.f-28 {
+  font-size: 28px;
+  line-height: 30px;
+}
+
+.f-36 {
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.px-2rem {
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+/* Main Classes */
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f7f8fc;
+}
+
+/* Side Navbar */
+.brand-logo {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.brand-logo__img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 135px;
+  width: 100%;
+}
+
+/* Top Navbar */
+.top-navbar {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+}
+
+.notification-section {
+  position: relative;
+}
+
+.notification-section__badge {
+  position: absolute;
+  color: white;
+  height: 15px;
+  width: 15px;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  background-color: #f8444f;
+  -webkit-transform: translate(6px, -6px);
+          transform: translate(6px, -6px);
+  font-size: 9px;
+}
+
+/* Main Content Section */
+.main-content-top__subtext-content {
+  margin-right: 20px;
+}
+
+.main-content-top__inner-logo {
+  margin-right: 2px;
+}
+
+.stats-card {
+  border: 1px solid #dfe0eb;
+  background-color: #ffffff;
+  border-radius: 10px;
+  background: url("../images/card-step.svg") bottom 1rem right 1rem, -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) bottom right;
+  background: url("../images/card-step.svg") bottom 1rem right 1rem, linear-gradient(#fff, #fff) bottom right;
+  background-repeat: no-repeat;
+}
+
+.stats-card__header {
+  color: #4f4f4f;
+  text-transform: uppercase;
+}
+
+.stats-card__count-main {
+  color: #474747;
+  margin-right: 6px;
+}
+
+.stats-card__count-secondary {
+  color: #29ca7d;
+}
+
+.h-54 {
+  height: 54px;
+}
+
+.add-keyword-btn {
+  background-color: #0c318f;
+  color: white;
+  border-radius: 5px;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  float: right;
+}
+
+.add-keyword-btn:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.add-keyword-btn:active {
+  color: #ffffff;
+  background-color: #082160;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.add-keyword-btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.add-keyword-btn__icon {
+  margin-right: 12px;
+}
+
+.keyword-table-card {
+  border: 1px solid #dfe0eb;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.keyword-table-card .table-responsive {
+  padding-top: 36px;
+}
+
+.keyword-table-card table {
+  border-top-left-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.keyword-table-card table .thead-themed tr th {
+  background-color: #f7f8fc;
+  text-transform: uppercase;
+  border: 0;
+  color: #4f4f4f;
+}
+
+.keyword-table-card table .thead-themed tr th:first-of-type {
+  border-left: 1px solid #dee2e6;
+  border-top-left-radius: 10px;
+}
+
+.keyword-table-card table tbody td:first-of-type {
+  border-left: 1px solid #dee2e6;
+}
+
+.keyword-table-card table tbody td:last-of-type {
+  border-left: 1px solid #dee2e6;
+}
+
+.keyword-table-card table tbody td:not(:first-of-type) {
+  border-left: none;
+  font-weight: bold;
+}
+
+.keyword-table-card table tbody td:not(:last-of-type) {
+  border-right: none;
+}
+
+.keyword-table-card table tbody td {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.export-btn {
+  background-color: #fff;
+  color: white;
+  border-radius: 5px;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #4f4f4f;
+  border: 1px solid #e0e0e0;
+}
+
+.export-btn:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.export-btn:active {
+  color: #ffffff;
+  background-color: #e6e6e6;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.export-btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.export-btn:hover {
+  color: #4f4f4f;
+}
+
+.export-btn:active {
+  color: #4f4f4f;
+}
+/*# sourceMappingURL=campaign-dashboard-v1.css.map */
