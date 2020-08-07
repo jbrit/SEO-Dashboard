@@ -221,6 +221,7 @@ aside.sidebar {
   font-size: 16px;
   line-height: 16px;
   margin-right: 20px;
+  display: inline-block;
 }
 
 .main-content-top__inner-logo {
@@ -256,6 +257,16 @@ aside.sidebar {
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
+}
+
+.stats-card__count-secondary.danger-stats {
+  color: #ff3737;
+}
+
+.stats-card__count-secondary svg.iconify {
+  font-size: 24px;
+  vertical-align: bottom;
+  margin-right: 8px;
 }
 
 .h-54 {
@@ -346,6 +357,21 @@ aside.sidebar {
   padding-top: 24px;
   padding-bottom: 24px;
   background-color: #ffffff;
+}
+
+.keyword-table-section table tbody td svg.iconify {
+  font-size: 16px;
+  vertical-align: middle;
+  margin-left: 8px;
+  color: var(--main-color);
+}
+
+.keyword-table-section table tbody td.reduce svg.iconify {
+  color: #ff3737;
+}
+
+.keyword-table-section table tbody td.neutral svg.iconify {
+  color: #b8b8b8;
 }
 
 .export-btn {

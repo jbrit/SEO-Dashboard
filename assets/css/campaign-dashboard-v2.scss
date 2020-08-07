@@ -209,6 +209,7 @@ aside {
     font-size: 16px;
     line-height: 16px;
     margin-right: 20px;
+    display: inline-block;
   }
   &__inner-logo {
     margin-right: 2px;
@@ -237,6 +238,14 @@ aside {
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
+    &.danger-stats {
+      color: #ff3737;
+    }
+    svg.iconify {
+      font-size: 24px;
+      vertical-align: bottom;
+      margin-right: 8px;
+    }
   }
 }
 .h-54 {
@@ -296,6 +305,18 @@ aside {
         padding-top: 24px;
         padding-bottom: 24px;
         background-color: #ffffff;
+        svg.iconify {
+          font-size: 16px;
+          vertical-align: middle;
+          margin-left: 8px;
+          color: var(--main-color);
+        }
+        &.reduce svg.iconify {
+          color: #ff3737;
+        }
+        &.neutral svg.iconify {
+          color: #b8b8b8;
+        }
       }
     }
   }

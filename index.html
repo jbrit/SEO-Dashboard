@@ -232,8 +232,13 @@
                     <div class="stats-card__count-main mb-4">
                       90.1K
                     </div>
-                    <div class="stats-card__count-secondary">
-                      +28%
+                    <div class="stats-card__count-secondary danger-stats">
+                      <span
+                        class="iconify"
+                        data-icon="bi-arrow-down-square-fill"
+                        data-inline="false"
+                      ></span
+                      >-2%
                     </div>
                   </div>
                 </div>
@@ -248,7 +253,12 @@
                       7.33
                     </div>
                     <div class="stats-card__count-secondary">
-                      +29%
+                      <span
+                        class="iconify"
+                        data-icon="bi:arrow-up-square-fill"
+                        data-inline="false"
+                      ></span
+                      >+28%
                     </div>
                   </div>
                 </div>
@@ -263,7 +273,12 @@
                       39k
                     </div>
                     <div class="stats-card__count-secondary">
-                      +17%
+                      <span
+                        class="iconify"
+                        data-icon="bi:arrow-up-square-fill"
+                        data-inline="false"
+                      ></span
+                      >+18%
                     </div>
                   </div>
                 </div>
@@ -278,7 +293,12 @@
                       3
                     </div>
                     <div class="stats-card__count-secondary">
-                      +18%
+                      <span
+                        class="iconify"
+                        data-icon="bi:arrow-up-square-fill"
+                        data-inline="false"
+                      ></span
+                      >+18%
                     </div>
                   </div>
                 </div>
@@ -313,23 +333,55 @@
                   <tbody>
                     <tr>
                       <td scope="row">hotels in ikeja</td>
-                      <td>4</td>
-                      <td>2</td>
+                      <td>
+                        5<span
+                          class="iconify"
+                          data-icon="bi:arrow-up-square-fill"
+                          data-inline="false"
+                        ></span>
+                      </td>
+                      <td>10</td>
                       <td>Tripadvisor</td>
                       <td>Travlebeta</td>
                       <td><a href="#" class="compare-btn">Compare</a></td>
                     </tr>
                     <tr>
                       <td scope="row">hotels in abuja</td>
+                      <td class="neutral">
+                        6<span
+                          class="iconify"
+                          data-icon="bi:dash-square-fill"
+                          data-inline="false"
+                        ></span>
+                      </td>
                       <td>6</td>
-                      <td>4</td>
                       <td>Wakanow</td>
                       <td>Travelstart</td>
                       <td><a href="#" class="compare-btn">Compare</a></td>
                     </tr>
                     <tr>
-                      <td scope="row">hotels in uyo</td>
-                      <td>5</td>
+                      <td scope="row">hotels in Uyo</td>
+                      <td class="reduce">
+                        5<span
+                          class="iconify"
+                          data-icon="bi-arrow-down-square-fill"
+                          data-inline="false"
+                        ></span>
+                      </td>
+                      <td>3</td>
+                      <td>Tripadvisor</td>
+                      <td>Tripadvisor</td>
+                      <td><a href="#" class="compare-btn">Compare</a></td>
+                    </tr>
+                    <tr>
+                      <td scope="row">hotels in Osun</td>
+                      <td class="reduce">
+                        2<span
+                          class="iconify"
+                          data-icon="bi-arrow-down-square-fill"
+                          data-inline="false"
+                        ></span>
+                      </td>
                       <td>3</td>
                       <td>Tripadvisor</td>
                       <td>Tripadvisor</td>
@@ -361,7 +413,15 @@
       crossorigin="anonymous"
     ></script>
     <!-- custom js -->
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <!-- <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script> -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"
+    ></script>
     <script src="./assets/js/campaign-dashboard.js"></script>
   </body>
 </html>
