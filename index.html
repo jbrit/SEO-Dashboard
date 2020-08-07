@@ -342,7 +342,16 @@
                   Keyword Rankings
                 </div>
                 <div class="flex-auto">
-                  <a href="#" class="compare-btn">Export</a>
+                  <!-- <a href="#" class="compare-btn">Export</a> -->
+                  <select
+                    class="form-control shadow-none"
+                    name="type"
+                    id="exportSelects"
+                  >
+                    <option value="" disabled hidden selected>Export</option>
+                    <option value="pdf">Export as PDF</option>
+                    <option value="Spreadsheet">Export as Spreadsheet</option>
+                  </select>
                 </div>
               </div>
               <div class="table-responsive position-relative">
