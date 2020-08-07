@@ -53,6 +53,25 @@ body {
 }
 
 /* Side Navbar */
+.sidebar-toggler {
+  display: none;
+  color: #454545;
+}
+
+@media only screen and (max-width: 992px) {
+  .sidebar-toggler {
+    font-size: 2rem;
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  .navbar-brand {
+    padding-left: 40px;
+  }
+}
+
 aside.sidebar {
   position: fixed;
   -webkit-transform: translateX(0);
@@ -158,6 +177,10 @@ aside.sidebar {
 /* Top Navbar */
 .top-navbar {
   background: #ffffff;
+}
+
+.top-navbar a.navbar-brand {
+  color: #454545;
 }
 
 .notification-section {

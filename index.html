@@ -35,6 +35,12 @@
             src="/assets/images/Brand Logo.svg"
             alt=""
           />
+          <span
+            style="right: 3rem;"
+            class="sidebar-toggler flex-auto position-absolute"
+          >
+            <ion-icon name="menu-outline"></ion-icon>
+          </span>
         </div>
         <div class="px-4">
           <a
@@ -90,7 +96,10 @@
       <main class="col px-0">
         <nav class="navbar top-navbar mb-5 py-3 px-0">
           <div class="container px-2rem">
-            <a class="navbar-brand f-main font-weight-bold" href="#"
+            <span class="sidebar-toggler flex-auto position-absolute">
+              <ion-icon name="menu-outline"></ion-icon>
+            </span>
+            <a class="navbar-brand font-weight-bold" href="#"
               >Campaign Dashboard</a
             >
             <!-- <button
@@ -352,6 +361,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- custom js -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="./assets/js/campaign-dashboard.js"></script>
   </body>
 </html>
