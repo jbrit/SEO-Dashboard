@@ -81,8 +81,14 @@
   }
 }
 .px-2rem {
-  padding-left: 36px;
-  padding-right: 36px;
+  @media only screen and (min-width: 480px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  @media only screen and (min-width: 992px) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
 }
 /* Main Classes */
 body {
@@ -104,6 +110,10 @@ body {
   }
   .navbar-brand {
     padding-left: 40px;
+    @media only screen and (max-width: 480px) {
+      padding-left: 32px;
+      margin-right: 0px;
+    }
   }
 }
 aside {
@@ -173,9 +183,20 @@ aside {
   a.navbar-brand {
     color: #454545;
   }
+  .avatar-name {
+    color: #454545;
+    text-decoration: none;
+    display: none;
+    @media only screen and (min-width: 768px) {
+      display: inline;
+    }
+  }
 }
 .notification-section {
   position: relative;
+  @media only screen and (max-width: 420px) {
+    display: none !important;
+  }
   &__badge {
     position: absolute;
     color: white;
