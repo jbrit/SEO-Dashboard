@@ -96,6 +96,7 @@ aside.sidebar {
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  border-right: 1.5px solid #f2f2f2;
 }
 
 .collapsed-sidebar aside {
@@ -193,15 +194,35 @@ aside.sidebar {
 /* Top Navbar */
 .top-navbar {
   background: #ffffff;
+  border-bottom: 1.5px solid #f2f2f2;
+}
+
+.top-navbar a {
+  text-decoration: none;
 }
 
 .top-navbar a.navbar-brand {
   color: #454545;
+  font-size: 22px;
+}
+
+.top-navbar .avatar-section {
+  padding-right: 16px;
+  position: relative;
+}
+
+.top-navbar .avatar-section .caret {
+  position: absolute;
+  right: 0;
+  color: #454545;
+  top: calc(50% - 8px);
 }
 
 .top-navbar .avatar-name {
   color: #454545;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
   display: none;
 }
 
@@ -282,6 +303,7 @@ aside.sidebar {
   color: #101830;
   margin-right: 6px;
   font-size: 24px;
+  font-weight: 500;
   line-height: 31px;
 }
 
@@ -380,7 +402,6 @@ aside.sidebar {
 
 .keyword-table-section table tbody td:not(:first-of-type) {
   border-left: none;
-  font-weight: bold;
 }
 
 .keyword-table-section table tbody td:not(:last-of-type) {

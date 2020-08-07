@@ -121,6 +121,7 @@ aside {
     position: fixed;
     transform: translateX(0);
     transition: transform 0.5s ease;
+    border-right: 1.5px solid #f2f2f2;
   }
   .collapsed-sidebar & {
     transform: translateX(-100%);
@@ -179,13 +180,30 @@ aside {
 /* Top Navbar */
 .top-navbar {
   background: #ffffff;
+  border-bottom: 1.5px solid #f2f2f2;
   // box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
-  a.navbar-brand {
-    color: #454545;
+  a {
+    text-decoration: none;
+    &.navbar-brand {
+      color: #454545;
+      font-size: 22px;
+    }
+  }
+  .avatar-section {
+    padding-right: 16px;
+    position: relative;
+    .caret {
+      position: absolute;
+      right: 0;
+      color: #454545;
+      top: calc(50% - 8px);
+    }
   }
   .avatar-name {
     color: #454545;
     text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
     display: none;
     @media only screen and (min-width: 768px) {
       display: inline;
@@ -251,6 +269,7 @@ aside {
     color: #101830;
     margin-right: 6px;
     font-size: 24px;
+    font-weight: 500;
     line-height: 31px;
   }
   &__count-secondary {
@@ -317,7 +336,6 @@ aside {
       }
       td:not(:first-of-type) {
         border-left: none;
-        font-weight: bold;
       }
       td:not(:last-of-type) {
         border-right: none;
